@@ -6,8 +6,8 @@ import requests
 # Define data directory relative to current notebook
 data_dir = "data"
 team_id_file = os.path.join(data_dir, "team_ids.json")
-csv_input_path = os.path.join(data_dir, "2022-23_to_2024-25_with_global_id.csv")
-csv_output_path = os.path.join(data_dir, "2022-23_to_2024-25_with_team_id.csv")
+csv_input_path = os.path.join(data_dir, "2022-23_to_2024-25_clean.csv")
+csv_output_path = os.path.join(data_dir, "2022-23_to_2024-25_clean.csv")
 
 # Ensure the directory exists
 os.makedirs(data_dir, exist_ok=True)

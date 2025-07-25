@@ -1,0 +1,1724 @@
+{
+  "Arsenal": {
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Aston Villa": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Bournemouth": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Brentford": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Brighton": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Chelsea": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Crystal Palace": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Everton": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Fulham": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Ipswich": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Leicester": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Liverpool": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Luton": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Man City": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Man Utd": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Newcastle": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Nott'm Forest": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Southampton": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Spurs": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "West Ham": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Wolves": {
+      "H": 1.5,
+      "A": 2.5
+    }
+  },
+  "Wolves": {
+    "Arsenal": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Aston Villa": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Bournemouth": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Brentford": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Brighton": {
+      "H": 2.5,
+      "A": 3.5
+    },
+    "Chelsea": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Crystal Palace": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Everton": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Fulham": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Ipswich": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Leicester": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Liverpool": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Luton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Man City": {
+      "H": 4.5,
+      "A": 5
+    },
+    "Man Utd": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Newcastle": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "Nott'm Forest": {
+      "H": 1.5,
+      "A": 2.5
+    },
+    "Southampton": {
+      "H": 1,
+      "A": 1.5
+    },
+    "Spurs": {
+      "H": 3.5,
+      "A": 4.5
+    },
+    "West Ham": {
+      "H": 2.5,
+      "A": 3.5
+    }
+  }
+}

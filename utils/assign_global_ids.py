@@ -44,4 +44,4 @@ df['global_player_id'] = df.apply(lambda row: global_id_map.get((row['season'], 
 print(df[['name', 'season', 'element', 'global_player_id']].drop_duplicates().sort_values(by='global_player_id').head(20))
 
 # Save updated file
-df.to_csv("data/2022-23_to_2024-25_with_global_id.csv", index=False)
+df.to_csv("data/2022-23_to_2024-25_clean.csv", index=False)
