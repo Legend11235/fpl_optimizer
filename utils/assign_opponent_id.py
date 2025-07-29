@@ -1,37 +1,52 @@
 import pandas as pd
 import json
-import os
 
-# === FILE PATHS ===
-data_dir = "data"
-csv_input_path = os.path.join(data_dir, "2022-23_to_2024-25_clean.csv")
-csv_output_path = os.path.join(data_dir, "2022-23_to_2024-25_clean.csv")
-team_id_file = os.path.join(data_dir, "team_ids.json")
+# === Load your main FPL data ===
+df = pd.read_csv("data/2022-23_to_2024-25_clean.csv", low_memory=False)
 
-# === LOAD CSV ===
-df = pd.read_csv(csv_input_path, low_memory=False)
-print(f"Loaded data from {csv_input_path} with {len(df)} rows.")
+# === Load your local master list ===
+master = pd.read_csv("data/master_team_list.csv", dtype={"team": int})
+# Expecting columns exactly: season,team,team_name
 
-# === LOAD team_ids.json ===
-if not os.path.exists(team_id_file):
-    raise FileNotFoundError(f"Missing team ID mapping file: {team_id_file}")
+# Build a dict: (season,team) -> team_name
+master_map = {
+    (row.season, row.team): row.team_name
+    for row in master.itertuples(index=False)
+}
 
-with open(team_id_file, 'r') as f:
-    team_to_id = json.load(f)
+# Map directly into df
+df["opponent_team_name"] = df.apply(
+    lambda r: master_map.get((r["season"], r["opponent_team"])),
+    axis=1
+)
 
-# === Map opponent team names to their team ID ===
-if 'opponent_team' not in df.columns:
-    raise KeyError("Column 'opponent_team' not found in DataFrame.")
+# Optional check: see which combos didn’t find a name
+missing = (
+    df[df["opponent_team_name"].isna()]
+      [["season","opponent_team"]]
+      .drop_duplicates()
+)
+if not missing.empty:
+    print("Missing team names for these (season,team) pairs:\n", missing)
 
-df['opponent_team_id'] = df['opponent_team'].map(team_to_id)
+# === Load your global name->ID map ===
+with open("../data/team_ids.json") as f:
+    global_map = json.load(f)
+if isinstance(global_map, list):
+    global_map = {e["name"]: e["id"] for e in global_map}
 
-# === Check for unmapped teams ===
-unmapped = df[df['opponent_team_id'].isna()]['opponent_team'].unique()
-if len(unmapped) > 0:
-    print("Unmapped opponent teams found:")
-    for team in unmapped:
-        print("-", team)
+# Now map names to IDs (will produce NaN for any unmapped names)
+df["opponent_team_id"] = df["opponent_team_name"].map(global_map)
 
-# === SAVE updated file ===
-df.to_csv(csv_output_path, index=False)
-print(f"Saved updated DataFrame to {csv_output_path}")
+# Optional: check which names didn’t get an ID
+bad_ids = (
+    df[df["opponent_team_id"].isna()]
+      ["opponent_team_name"]
+      .drop_duplicates()
+)
+if not bad_ids.empty:
+    print("These team names didn’t map to a global ID:\n", bad_ids)
+
+# === Save the result ===
+df.to_csv("data/2022-23_to_2024-25_clean_with_ids.csv", index=False)
+print("Done — your CSV now has opponent_team_name and opponent_team_id columns.")
