@@ -1,86 +1,106 @@
 import pandas as pd
 import json
 
-# === Load Data ===
-df = pd.read_csv("data/2022-23_to_2024-25_clean.csv", low_memory=False)
-with open("data/relative_fdr.json", "r") as f:
+# === 0) Load & prep ===
+df = pd.read_csv("../data/2022-23_to_2024-25_clean.csv", low_memory=False)
+with open("../data/relative_fdr_V2.json", "r") as f:
     relative_fdr_map = json.load(f)
 
-# === Step 0: Parse kickoff_time and sort by player + date ===
+# parse dates & sort
 df["kickoff_time"] = pd.to_datetime(df["kickoff_time"])
-df = df.sort_values(by=["global_player_id", "kickoff_time"]).reset_index(drop=True)
+df = df.sort_values(["global_player_id", "kickoff_time"]).reset_index(drop=True)
 
-# === Step 1: Add next_opponent_team and next_opponent_fdr ===
+# === 1) Next-opponent info ===
+df["next_kickoff_time"]  = df.groupby("global_player_id")["kickoff_time"].shift(-1)
 df["next_opponent_team"] = df.groupby("global_player_id")["opponent_team_name"].shift(-1)
-df["next_opponent_fdr"] = df.groupby("global_player_id")["relative_fdr"].shift(-1)
+df["next_opponent_fdr"]  = df.groupby("global_player_id")["relative_fdr"].shift(-1)
 
-# === Step 2: Compute stats for opponent team (not player team!) ===
-def get_opponent_stats(row):
-    if row["was_home"]:
-        return pd.Series({
-            "opp_goals_scored": row["team_a_score"],
-            "opp_goals_conceded": row["team_h_score"],
-            "opp_clean_sheets": 1 if row["team_h_score"] == 0 else 0
-        })
+# === 2) Per-row opponent stats ===
+def get_opponent_stats(r):
+    if r.was_home:
+        sc, conc = r.team_a_score, r.team_h_score
     else:
-        return pd.Series({
-            "opp_goals_scored": row["team_h_score"],
-            "opp_goals_conceded": row["team_a_score"],
-            "opp_clean_sheets": 1 if row["team_a_score"] == 0 else 0
-        })
+        sc, conc = r.team_h_score, r.team_a_score
+    return pd.Series({
+        "opp_clean_sheets":   1 if conc == 0 else 0,
+        "opp_goals_conceded": conc,
+        "opp_goals_scored":   sc
+    })
 
-df[["opp_goals_scored", "opp_goals_conceded", "opp_clean_sheets"]] = df.apply(get_opponent_stats, axis=1)
+df[["opp_clean_sheets",
+    "opp_goals_conceded",
+    "opp_goals_scored"]] = df.apply(get_opponent_stats, axis=1)
 
-# === Step 3: Average FDR of previous opponents over 1/3/5 GWs ===
-for n in [1, 3, 5]:
+# === 3) avg_opponent_fdr_last_N_gw (unchanged) ===
+for n in (1, 3, 5):
     df[f"avg_opponent_fdr_last_{n}_gw"] = (
         df.groupby("global_player_id")["relative_fdr"]
-        .shift(1)
-        .rolling(window=n, min_periods=n)  # full window required
-        .mean()
-        .reset_index(level=0, drop=True)
+          .shift(1)
+          .rolling(window=n, min_periods=n)
+          .mean()
+          .reset_index(level=0, drop=True)
     )
 
-# === Step 4: Average form of past opponents over 1/3/5 GWs ===
-for stat in ["opp_clean_sheets", "opp_goals_conceded", "opp_goals_scored"]:
-    for n in [1, 3, 5]:
+# === 4) avg_opponent_form_last_N (unchanged) ===
+for stat in ("opp_clean_sheets","opp_goals_conceded","opp_goals_scored"):
+    for n in (1, 3, 5):
         df[f"avg_opponent_{stat}_last_{n}"] = (
             df.groupby("global_player_id")[stat]
-            .shift(1)
-            .rolling(window=n, min_periods=n)
-            .mean()
-            .reset_index(level=0, drop=True)
+              .shift(1)
+              .rolling(window=n, min_periods=n)
+              .mean()
+              .reset_index(level=0, drop=True)
         )
 
-# === Step 5: Rolling form of NEXT opponent team (e.g. Burnley's recent stats) ===
+# === 5) Build a true fixture-level table ===
+fixtures = (
+    df[[
+      "season",
+      "opponent_team_name",
+      "kickoff_time",
+      "opp_clean_sheets",
+      "opp_goals_conceded",
+      "opp_goals_scored"
+    ]]
+    .rename(columns={"opponent_team_name": "team"})
+    .drop_duplicates(subset=["season","team","kickoff_time"])
+    .sort_values(["team","kickoff_time"])
+    .reset_index(drop=True)
+)
 
-# Temporarily use next_opponent_team in place of `team` but save the original
-df["team_original"] = df["team"]
-df["team"] = df["next_opponent_team"]
+# === 6) Compute rolling stats on that table (cross-season carryover) ===
+for stat in ("opp_clean_sheets","opp_goals_conceded","opp_goals_scored"):
+    short = stat.replace("opp_","")  # e.g. "clean_sheets"
+    grp = fixtures.groupby("team")[stat]
+    for n in (1, 3, 5):
+        fixtures[f"next_opponent_{short}_last_{n}_gw"] = (
+            grp
+              .rolling(window=n, min_periods=n)
+              .mean()
+              .shift(1)
+              .reset_index(level=0, drop=True)
+        )
 
-def compute_next_opp_form(df, stat, prefix):
-    results = []
-    for team, group in df.groupby("team"):
-        group = group.sort_values("kickoff_time")
-        for n in [1, 3, 5]:
-            group[f"{prefix}_last_{n}_gw"] = (
-                group[stat]
-                .rolling(window=n, min_periods=n)
-                .mean()
-                .shift(1)
-            )
-        results.append(group)
-    return pd.concat(results)
+# === 7) Merge those next-opponent metrics back in ===
+# prepare for join
+merge_cols = ["team","kickoff_time"] + [
+    c for c in fixtures.columns
+    if c.startswith("next_opponent_") and c.endswith("_gw")
+]
+# rename to match df’s “next_…” columns
+fixtures_merge = fixtures[merge_cols].rename(
+    columns={"team":"next_opponent_team",
+             "kickoff_time":"next_kickoff_time"}
+)
 
-df = compute_next_opp_form(df, "opp_clean_sheets", "next_opponent_clean_sheets")
-df = compute_next_opp_form(df, "opp_goals_conceded", "next_opponent_goals_conceded")
-df = compute_next_opp_form(df, "opp_goals_scored", "next_opponent_goals_scored")
+df = df.merge(
+    fixtures_merge,
+    how="left",
+    on=["next_opponent_team","next_kickoff_time"]
+)
 
-# === Finalize: Restore team column and sort ===
-df["team"] = df["team_original"]
-df.drop(columns=["team_original"], inplace=True)
-df = df.sort_values(by=["global_player_id", "kickoff_time"]).reset_index(drop=True)
+# === 8) Final cleanup & save ===
+df = df.sort_values(["global_player_id", "kickoff_time"]).reset_index(drop=True)
+df.to_csv("../data/2022-23_to_2024-25_cleanV2.csv", index=False)
 
-# === Save ===
-df.to_csv("data/2022-23_to_2024-25_cleanV2.csv", index=False)
-print("All features added successfully and saved to cleanV2.")
+print("Succesfuly, added the features")
