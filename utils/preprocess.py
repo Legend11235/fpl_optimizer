@@ -19,7 +19,7 @@ for season in seasons:
 # Merge and save
 if all_dfs:
     merged = pd.concat(all_dfs, ignore_index=True)
-    merged.to_csv("data/2022-23_to_2024-25_full.csv", index=False)
+    merged.to_csv("data/2022-23_to_2024-25_ORIGINAL.csv", index=False)
     print("✅ All gameweeks successfully merged and saved.")
 else:
     print("❌ No data loaded.")
